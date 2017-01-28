@@ -19,9 +19,9 @@ module.exports = function(environment) {
 
     firebase: {
     apiKey: 'AIzaSyDH9QNBxWBrHC9gojP7GXyKQJyxuMm6psg',
-    authDomain: 'todolistfirebase-6f7d8.firebaseapp.com',
+    authDomain: 'ToDoListFirebase.firebaseapp.com',
     databaseURL: 'https://todolistfirebase-6f7d8.firebaseio.com',
-    storageBucket: 'todolistfirebase-6f7d8.appspot.com',
+    storageBucket: 'ToDoListFirebase.appspot.com',
   },
 
 

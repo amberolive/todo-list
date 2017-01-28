@@ -1,3 +1,30 @@
 {{outlet}}
 
-<h1>Hello Kaitlin!!!!</h1>
+<div class="ui center aligned container">
+  <h1>Todo List</h1>
+  <br>
+  <!--<div class="ui checkbox">
+    {{input type="checkbox" name="complete" checked=complete}}
+    <label></label>
+  </div>-->
+
+  <div class="ui input">
+    {{input value=item type="text" placeholder="Enter Item"}}
+  </div>
+
+  <br><br>
+
+  <button class="ui button" {{action "addItem"}}>
+    Add Item
+  </button>
+
+  <br><br>
+  <section>
+  {{#each model as |todo|}}
+    <div>{{#if todo.complete}}<s>{{input type="checkbox" checked=todo.complete}} {{todo.item}}</s>
+    {{else}}{{input type="checkbox" checked=todo.complete}} {{todo.item}}{{/if}}</div>
+    <div class="ui divider"></div>
+  {{/each}}
+  </section>
+
+</div>
