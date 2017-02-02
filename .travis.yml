@@ -1,0 +1,38 @@
+language: node_js
+node_js:
+  - "4"
+
+# safelist
+branches:
+  only:
+  - master
+
+script:
+  - echo "Deploying!"
+  - npm install
+
+install:
+  - npm install -g firebase-tools
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
+
+#sudo: false
+
+#cache:
+#  directories:
+#    - $HOME/.npm
+#    - $HOME/.cache # includes bowers cache
+
+#before_install:
+#  - npm config set spin false
+#  - npm install -g bower phantomjs-prebuilt
+#  - bower --version
+#  - phantomjs --version
+
+#install:
+#  - npm install
+#  - bower install
+
+#script:
+#  - npm test
