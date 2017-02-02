@@ -21,7 +21,9 @@
   <br><br>
   <section>
   {{#each model as |todo|}}
+
     <div>{{#if todo.complete}}<s>{{input type="checkbox" checked=todo.complete}} {{todo.item}}</s>
+
     {{else}}{{input type="checkbox" checked=todo.complete}} {{todo.item}}{{/if}}</div>
     <div class="ui divider"></div>
   {{/each}}
