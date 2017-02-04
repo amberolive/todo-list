@@ -19,7 +19,7 @@ install:
   - npm install -g firebase-tools@^2.1
 
 after_success:
-  - firebase deploy --token "${FIREBASE_TOKEN}"
+  - firebase deploy --token $FIREBASE_TOKEN
 
 #sudo: false
 
