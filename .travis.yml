@@ -16,7 +16,7 @@ install:
   - bower install
   - npm install -g ember-cli
   - ember build
-  - npm install -g firebase-tools
+  - npm install -g firebase-tools@2
 
 after_success:
   - firebase use default
