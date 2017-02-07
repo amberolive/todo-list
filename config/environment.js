@@ -17,6 +17,17 @@ module.exports = function(environment) {
       }
     },
 
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDH9QNBxWBrHC9gojP7GXyKQJyxuMm6psg",
+    authDomain: "todolistfirebase-6f7d8.firebaseapp.com",
+    databaseURL: "https://todolistfirebase-6f7d8.firebaseio.com",
+    storageBucket: "todolistfirebase-6f7d8.appspot.com",
+    messagingSenderId: "338122648095"
+  };
+
+  firebase.initializeApp(config);
+
     firebase: {
     apiKey: 'AIzaSyDH9QNBxWBrHC9gojP7GXyKQJyxuMm6psg',
     authDomain: 'ToDoListFirebase.firebaseapp.com',
