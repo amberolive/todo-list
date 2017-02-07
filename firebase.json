@@ -1,6 +1,5 @@
 {
-  "firebase": "todolist",
-  "public": "dist/",
+"public": "dist/",
   "ignore": [
     "firebase.json",
     "**/.*",

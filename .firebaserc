@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "todolistfirebase-6f7d8"
+    "default": "todolistfirebase-6f7d8",
+    "prod": "todolistfirebase-6f7d8"
   }
 }
