@@ -18,11 +18,12 @@ module.exports = function(environment) {
     },
 
 
-    firebase: {
-    apiKey: 'AIzaSyDH9QNBxWBrHC9gojP7GXyKQJyxuMm6psg',
-    authDomain: 'ToDoListFirebase.firebaseapp.com',
-    databaseURL: 'https://todolistfirebase-6f7d8.firebaseio.com',
-    storageBucket: 'ToDoListFirebase.appspot.com',
+  firebase: {
+    apiKey: "AIzaSyDH9QNBxWBrHC9gojP7GXyKQJyxuMm6psg",
+    authDomain: "todolistfirebase-6f7d8.firebaseapp.com",
+    databaseURL: "https://todolistfirebase-6f7d8.firebaseio.com",
+    storageBucket: "todolistfirebase-6f7d8.appspot.com",
+    messagingSenderId: "338122648095"
   },
 
 
@@ -39,7 +40,7 @@ module.exports = function(environment) {
     }
   };
 
-  
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
