@@ -1,0 +1,20 @@
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+
+  actions: {
+       login(provider) {
+         var controller = this.get('controller');
+         var email = controller.get('userEmail');
+         var password = controller.get('userPassword');
+           this.get('session').open('firebase', {
+                provider: provider,
+                email: email,
+                password: password
+           }).then(function() {
+               this.transitionTo('protected');
+           }.bind(this));
+       }
+
+     }
+});
