@@ -8,6 +8,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('todo');
+  this.route('session');
+  this.route('login');
+  this.route('protected');
 });
 
 export default Router;
